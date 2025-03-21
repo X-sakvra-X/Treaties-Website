@@ -24,7 +24,6 @@ Date Last Modified: 03.11.2025-->
         }
         h1 {
             font-family: 'Mountains of Christmas', cursive;
-            background-color: #f0f0f0;
             color: #333;
             margin: 0;
             padding: 0;
@@ -33,6 +32,13 @@ Date Last Modified: 03.11.2025-->
             margin-top: 1em;
         }
         .menu-header {
+        background: linear-gradient(135deg, #101010, #4E3A57, #607186);
+        padding: 60px 20px;
+        text-align: center;
+        border-bottom: 2px solid #b99973;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    }
+    .menu-header {
         background: linear-gradient(135deg, #101010, #4E3A57, #607186);
         padding: 60px 20px;
         text-align: center;
@@ -54,6 +60,26 @@ Date Last Modified: 03.11.2025-->
         margin-top: 10px;
         color: #b99973;
         opacity: 0.8;
+    }
+
+    .menu-section {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+        padding: 20px;
+        max-width: 1200px;
+        margin: 0 auto 50px;
+    }
+
+    @keyframes fadeInUp {
+        from {
+        opacity: 0;
+        transform: translateY(20px);
+        }
+        to {
+        opacity: 1;
+        transform: translateY(0);
+        }
     }
     </style>
 </head>
