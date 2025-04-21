@@ -1,14 +1,14 @@
 /* General Styles */
 body {
     font-family: 'Baloo 2', cursive;
-    background-color: #f0faff;
+    background-color: #580505;
     color: #333;
     margin: 0;
     padding: 0;
   }
   
   header {
-    background-color: #79c2d0;
+    background-color: #000000;
     color: white;
     text-align: center;
     padding: 30px 10px;
