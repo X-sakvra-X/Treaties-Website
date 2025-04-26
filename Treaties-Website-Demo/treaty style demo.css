@@ -1,76 +1,146 @@
-/* General Styles */
 body {
-    font-family: 'Baloo 2', cursive;
-    background-color: #580505;
-    color: #333;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header {
-    background-color: #000000;
-    color: white;
-    text-align: center;
-    padding: 30px 10px;
-    border-bottom: 5px solid #5aa0ae;
-  }
-  
-  h1 {
-    font-size: 2.5em;
-    margin: 0;
-  }
-  
-  nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 15px 0 0;
-  }
-  
-  nav li {
-    display: inline;
-    margin: 0 15px;
-  }
-  
-  nav a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2em;
-  }
-  
-  .container {
-    padding: 20px;
-    max-width: 900px;
-    margin: auto;
-  }
-  
-  section {
-    background-color: #fffbe6;
-    border-radius: 15px;
-    padding: 25px;
-    margin-bottom: 30px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  h2, h3 {
-    color: #00695c;
-  }
-  
-  p {
-    font-size: 1.2em;
-  }
-  
-  img {
-    width: 100%;
-    max-width: 400px;
-    display: block;
-    margin: 20px auto;
-    border-radius: 12px;
-  }
-  
-  footer {
-    background-color: #5aa0ae;
-    color: white;
-    text-align: center;
-    padding: 15px;
-  }
-  
+  background-color: #300606;
+  color: #D1D1D1;
+  font-family: 'Delius Swash Caps', cursive;
+  margin: 0;
+  padding: 0;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+h1 {
+  font-family: 'Mountains of Christmas', cursive;
+  color: #E3E3E3;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 3.5em;
+  margin: 0;
+}
+header {
+  text-align: center;
+  padding: 30px 10px;
+  background-color: black;
+  border-bottom: 5px solid #5a2a3b;
+  color: #E3E3E3;
+  animation: fadeIn 2s ease-in;
+}
+nav {
+  position: sticky;
+  top: 0;
+  padding: 15px 0;
+  text-align: center;
+  z-index: 1000;
+}
+nav a {
+  color: #BFC1C2;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: 0.3s;
+}
+nav a:hover {
+  background-color: #3e1b1b;
+  border-radius: 5px;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0 0;
+}
+nav li {
+  display: inline;
+  margin: 0 15px;
+}
+.container {
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+section {
+  background-color: #3D2F34;
+  border-radius: 15px;
+  padding: 25px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #BFC1C2;
+}
+h2, h3 {
+  color: #979a9b;
+}
+p {
+  font-size: 1.2em;
+}
+img {
+  width: 100%;
+  max-width: 400px;
+  display: block;
+  margin: 20px auto;
+  border-radius: 12px;
+}
+.facts {
+  text-align: center;
+  padding: 30px;
+  background-color: black;
+  border: 2px solid #5a2a3b;
+}
+.facts-item {
+  background: #3D2F34;
+  padding: 15px;
+  margin: 10px;
+  display: inline-block;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+.facts-item:hover {
+  transform: scale(1.1);
+  background-color: #352031;
+}
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 20px;
+}
+.modal-content {
+  background-color: #222;
+  color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 600px;
+  width: 100%;
+  position: relative;
+  animation: fadeIn 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+  max-height: 80vh;
+  overflow-y: auto;
+}
+.close {
+  color: #f04957;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.close:hover {
+  color: #ff4081;
+}
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  border-top: 5px solid #5a2a3b;
+}

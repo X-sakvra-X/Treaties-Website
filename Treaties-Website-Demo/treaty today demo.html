@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Treaty 1 Today</title>
   <link rel="stylesheet" href="treaty style demo.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&family=Mountains+of+Christmas:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -22,21 +24,73 @@
 
 <main class="container">
   <section>
-    <h2>Why Is Treaty 1 Still Important?</h2>
-    <p>Treaty 1 is still a promise we remember today.</p>
+    <h2>Why Do We Still Talk About Treaty 1 Today?</h2>
+    <p>Treaty 1 is not just history—it is still important today!</p>
     <ul>
-      <li>🤝 We try to keep the promise and be fair.</li>
-      <li>🎓 Kids learn about Treaty 1 in school.</li>
-      <li>🏘️ First Nations people still live on Treaty 1 land.</li>
-      <li>💬 People talk and learn how to be better friends.</li>
+      <li>🤝 People still receive treaty payments every year as part of the agreement.</li>
+      <li>🎓 We all live on Treaty 1 land, and it is important to learn about its history.</li>
+      <li>🏘️ First Nations families still live on reserves that were promised in Treaty 1.</li>
+      <li>💬 First Nations leaders still work hard to make sure that the treaty promises are honored.</li>
     </ul>
-    <img src="kids-learning-treaty.png" alt="Cartoon of kids learning in a classroom" />
+    <p>Learning about Treaty 1 helps us understand that we must respect each other and take care of the land together.</p>
+    <img src="https://sdmntprwestus.oaiusercontent.com/files/00000000-68b0-6230-9334-c449b4a9267f/raw?se=2025-04-26T04%3A55%3A52Z&sp=r&sv=2024-08-04&sr=b&scid=6c93d42b-1192-56a3-ac48-9b13f0f9ff9a&skoid=51916beb-8d6a-49b8-8b29-ca48ed86557e&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-04-25T23%3A05%3A03Z&ske=2025-04-26T23%3A05%3A03Z&sks=b&skv=2024-08-04&sig=tNoE8o8%2BgudjqtPQezd86l2c%2BkbmTJHvmbvRl5N20Gw%3D"
+    alt="Cartoon of kids learning in a classroom" />
   </section>
+
+  <section>
+    <h2>How Can We Honor Treaty 1?</h2>
+    <p>Everyone who lives in Treaty 1 territory has a role to play in honoring the treaty.
+      Here are some ways we can do this:</p>
+    <ul>
+      <li>🌿 Learn about First Nations history and culture.</li>
+      <li>📚 Read books and listen to stories from Indigenous Elders.</li>
+      <li>🗣️ Talk about treaties and why they matter.</li>
+      <li>🏞️ Respect the land and take care of nature.</li>
+      <li>🖐️ Treat First Nations people with kindness and fairness.</li>
+    </ul>
+    <p>When we learn, listen, and respect Treaty 1, we help make sure that the promises made long ago are never forgotten.</p>
+  </section>
+
+  <section>
+    <h2>Treaty 1: A Promise for the Future</h2>
+    <p>When Treaty 1 was signed in 1871, it was meant to be a promise that would last forever. 
+<br>
+<br>
+      Even though some promises were broken, First Nations people never forgot what was promised to them. 
+<br>
+<br>
+  </section>
+
+  <section class="facts">
+    <h2>Did You Know?</h2>
+    <div class="facts-item" onclick="openModal('💡 Treaty 1 includes parts of Manitoba, including Winnipeg! If you live in this area, you live on Treaty 1 land!')">Click on Me to get Fact #1!</div>
+    <div class="facts-item" onclick="openModal('💡 The First Nations Chiefs who signed the treaty included Mis-koo-kenew (Red Eagle), Ka-ke-ka-penais (Forever Bird), Na-sha-ke-penais (Flying Down Bird), and others.')">Click on Me to get Fact #2!</div>
+    <div class="facts-item" onclick="openModal('💡 There are 7 First Nations communities that are part of Treaty 1. These communities still exist today!')">Click on Me to get Fact #3!</div>
+</section>
 </main>
 
 <footer>
-  <p>&copy; 2025 Treaty 1 for Kids</p>
+  <p>&copy; 2025 Tiny Treaty Tales</p>
 </footer>
+
+<div id="modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; 
+    background: rgba(0,0,0,0.5); display:none; justify-content:center; align-items:center; z-index:1000;">
+  <div style="background-color: #352031; padding:20px; border-radius:10px; max-width:300px; text-align:center;">
+    <span onclick="closeModal()" style="cursor:pointer; float:right; font-weight:bold;">×</span>
+    <p id="modal-text"></p>
+  </div>
+</div>
+
+<script>
+  function openModal(text) {
+    document.getElementById('modal-text').innerText = text;
+    document.getElementById('modal').style.display = 'flex';
+  }
+
+  function closeModal() {
+    document.getElementById('modal').style.display = 'none';
+  }
+</script>
 
 </body>
 </html>
